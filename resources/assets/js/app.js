@@ -19,24 +19,4 @@ Vue.component('bookform', require('./components/bookform.vue'));
 const app = new Vue({
     el: '#app'
 
-    // data: {
-    //     title: '',
-    //     body: ''
-    // },
-    //
-    // methods: {
-    //     onSubmit() {
-    //         axios.post('/books', this.$data)
-    //         .then(this.onSuccess)
-    //     },
-    //
-    //     onSuccess(response){
-    //         alert(response.data.message);
-    //
-    //         this.title = '';
-    //         this.body = '';
-    //
-    //     }
-    //
-    // }
 });
