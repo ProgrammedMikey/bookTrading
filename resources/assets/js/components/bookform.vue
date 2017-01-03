@@ -15,7 +15,7 @@
             <label for="body" class="col-md-12 control-label">Book image</label>
 
             <div class="col-md-8">
-                <input type="text" class="form-control" id="body" name="body" placeholder="Enter Book Image" v-model="body" required>
+                <input type="url" class="form-control" id="body" name="body" placeholder="Enter Book Cover Image URL" v-model="body" required>
                 <br>
             </div>
         </div>
@@ -47,6 +47,7 @@
             },
 
             onSuccess(response){
+                console.log(response);
                 alert(response.data.message);
 
                 this.title = '';

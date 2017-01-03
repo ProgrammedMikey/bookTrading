@@ -23,3 +23,13 @@ Route::get('/', 'BookController@display');
 Route::post('/books', 'BookController@store');
 
 Route::get('/books/mybooks', 'BookController@mybooks');
+
+Route::get('/account', [
+    'uses' => 'UserController@getAccount',
+    'as' => 'account'
+]);
+
+Route::post('/updateAccount', [
+    'uses' => 'UserController@updateAccount',
+    'as' => 'account.save'
+]);
