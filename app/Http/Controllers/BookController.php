@@ -10,7 +10,7 @@ class BookController extends Controller {
 
     public function display()
     {
-        return view('books.mybooks', [
+        return view('welcome', [
         'books' => Book::all()
         ]);
     }
@@ -32,6 +32,13 @@ class BookController extends Controller {
         ]);
 
         return ['message' => 'Book Added!'];
+    }
+
+    public function mybooks() {
+        
+        return view('books.mybooks', [
+            'mybooks' => Book::where('user_id', '=', Auth::user()->id)->get()
+        ]);
     }
 
 

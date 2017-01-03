@@ -11,13 +11,15 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+//Route::get('/', function () {
+//    return view('welcome');
+//});
 
 Auth::routes();
 
 Route::get('/home', 'HomeController@index');
 
-Route::get('/books/mybooks', 'BookController@display');
+Route::get('/', 'BookController@display');
 Route::post('/books', 'BookController@store');
+
+Route::get('/books/mybooks', 'BookController@mybooks');

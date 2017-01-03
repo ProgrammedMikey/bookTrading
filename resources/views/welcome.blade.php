@@ -5,7 +5,7 @@
 <body>
     <header class="jumbotron hero-spacer">
         <h1>Book Trading Club</h1>
-        <p>First rule of Book Trading Club is don't talk about Book Trading Club!</p>
+        <p>First Rule of Book Trading Club is Don't Talk About Book Trading Club!</p>
     </header>
 
 
@@ -52,13 +52,15 @@
         </div>
 
     </div>
-    <br/>
+
     <div class="row">
         <div class="col-lg-12">
-            <h3><center>List of All Books</center></h3>
+            <h3>List of All Books</h3>
         </div>
     </div>
     <hr/>
+
+    @include('books.bookList')
 
     </body>
 

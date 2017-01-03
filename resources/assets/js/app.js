@@ -15,8 +15,26 @@ require('./bootstrap');
 
 // Vue.component('example', require('./components/Example.vue'));
 Vue.component('bookform', require('./components/bookform.vue'));
-// const app =
+Vue.component('tabs', require('./components/tabs.vue'));
+
+Vue.component('tab', {
+        template: `
+                <div v-show="isActive"><slot></slot></div>           
+            `,
+
+            props: {
+                    name: { required: true},
+                    selected: { default: false}
+                },
+    data() {
+        return {isActive: false};
+    },
+
+    mounted() {
+        this.isActive = this.selected;
+    }
+    });
+
 const app = new Vue({
     el: '#app'
-
 });
