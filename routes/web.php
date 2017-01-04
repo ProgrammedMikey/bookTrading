@@ -33,3 +33,9 @@ Route::post('/updateAccount', [
     'uses' => 'UserController@updateAccount',
     'as' => 'account.save'
 ]);
+
+Route::post('/like', [
+    'uses' => 'BookController@addBookRequest',
+    'as' => 'like'
+]);
+

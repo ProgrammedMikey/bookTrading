@@ -30,8 +30,7 @@
                         <h3>List of All Your Trade Offers</h3>
                     </div>
                 </div>
-
-
+                @include('books.tradeOffers');
             </tab>
         </tabs>
 

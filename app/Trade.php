@@ -4,20 +4,15 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Book extends Model
+class Trade extends Model
 {
-    protected $fillable = [
-        'title', 'body',
-    ];
-
     public function user()
     {
         return $this->belongsTo('App\User');
     }
 
-    public function trades()
+    public function book()
     {
-        return $this->hasMany('App\Trade');
+        return $this->belongsTo('App\Book');
     }
-
 }

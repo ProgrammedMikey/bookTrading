@@ -38,3 +38,17 @@ Vue.component('tab', {
 const app = new Vue({
     el: '#app'
 });
+
+$('.like').on('click', function(event){
+    event.preventDefault();
+    var bookID = event.target.parentNode.parentNode.parentNode.dataset['postid'];
+    var isLike = event.target.previousElementSibling == null;
+    $.ajax({
+        method: 'POST',
+        url: urlLike,
+        data: {isLike: isLike, bookID: bookID, _token: token }
+    })
+        .done(function() {
+            event.target.innerText = isLike ? event.target.innerText == 'Offer to trade' ? 'Pending!' : 'Offer to trade' : '';
+        });
+});

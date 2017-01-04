@@ -31,4 +31,9 @@ class User extends Authenticatable
     {
         return $this->hasMany(Book::class);
     }
+
+    public function trades()
+    {
+        return $this->hasMany('App\Trade');
+    }
 }
