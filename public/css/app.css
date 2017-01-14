@@ -7725,7 +7725,7 @@ button.close {
 }
 
 body {
-  background-color: #FFCC00;
+  background-image: url("https://image.freepik.com/free-vector/beautiful-geometric-yellow-and-orange-background_1095-32.jpg");
   padding: 20px;
   margin: 0;
 }
@@ -7780,6 +7780,34 @@ ul.header li a {
 .hero-feature {
   margin-bottom: 25px;
   min-height: 140px;
+}
+
+.backColor {
+  background-color: #203c31 !important;
+  font-size: medium;
+}
+
+.indentP {
+  text-indent: 50px;
+  font-size: large;
+}
+
+.depth {
+  border-radius: 0;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background: white;
+  padding: 20px 20px;
+  box-shadow: 7px 8px 41px -10px rgba(0, 0, 0, 0.75);
+}
+
+.greyBackground {
+  background-color: #8c8c8c;
+  color: #000000;
+}
+
+.nav.navbar-nav.navbar-right li a {
+  color: black;
 }
 
 /*# sourceMappingURL=app.css.map */

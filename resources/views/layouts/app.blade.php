@@ -21,7 +21,7 @@
 </head>
 <body>
     <div id="app">
-        <nav class="navbar navbar-default navbar-static-top" style="color:#8C001A">
+        <nav class="navbar navbar-default navbar-static-top greyBackground" style="color:#8C001A">
             <div class="container">
                 <div class="navbar-header">
 
@@ -34,7 +34,7 @@
                     </button>
 
                     <!-- Branding Image -->
-                    <a class="navbar-brand" href="{{ url('/') }}">
+                    <a class="navbar-brand" style="color: black" href="{{ url('/') }}">
                         Book Club
                     </a>
                 </div>
